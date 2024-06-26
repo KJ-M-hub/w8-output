@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+Base style
+*/
+body {
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+}
+
+/* 
+grid
+*/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item {
+    width: 25%;
+    padding: 5px;
+    
+}
+
+.grid1 .grid-item {
+    width: 25%;
+}
+.grid2 .grid-item {
+    width: 50%;
+}
+.grid3 .grid-item {
+    width: 16.6%;
+}
+
+@media screen and (max-width: 768px) {
+    .grid .grid-item {
+        width: 100%;
+    }
+}
+.square {
+    display: block;
+    background-color: aquamarine;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #bbb;
+    transition: box-shadow .25s;
+}
+.square:hover {
+    box-shadow:  0 #bbb;
+    opacity: 0.6;
+}
