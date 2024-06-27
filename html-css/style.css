@@ -66,3 +66,76 @@ grid
     box-shadow:  0 #bbb;
     opacity: 0.6;
 }
+
+
+
+
+/*
+form
+*/
+.form {
+    padding: 0px 20px;
+}
+
+.form-headline {
+    text-align: center;
+}
+
+.form-table {
+    margin: 0 auto;
+}
+.form-table td {
+    padding: 10px;
+}
+.form-table th {
+    text-align: left;
+}
+.form-button {
+    text-align: center;
+    padding: 10px 0;
+}
+.input {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #333;
+    min-width: 500px;
+    height: 15px;
+    background-color: #8d76cb;
+}
+.button {
+    cursor: pointer;
+    min-width: 200px;
+    background-color: #793db9;
+    border: solid, 1px;
+    border-radius: 15px;
+    height: 30px;
+}
+.button:hover {
+    opacity: 0.5;
+}
+
+.signup-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+@media screen and (max-width: 768px){
+    .input,
+    .signup-message {
+        min-width: auto;
+        width: 100%;
+    }
+    .button {
+        min-width: auto;
+        width: 50%;
+    }
+    .form-table,
+    .form-table th,
+    .form-table tr,
+    .form-table td,
+    .form-table tbody{
+        display: block;
+    }
+}
