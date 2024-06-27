@@ -8,6 +8,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
     color: #333;
+    background-color: #c39cca;
 
 }
 
@@ -25,14 +26,26 @@ grid
     
 }
 
+.grid1 {
+    padding: 10px 5px 10px 5px;
+}
 .grid1 .grid-item {
     width: 25%;
+}
+
+.grid2 {
+    padding: 10px 5px;
 }
 .grid2 .grid-item {
     width: 50%;
 }
+
+.grid3 {
+    padding: 10px 5px;
+}
 .grid3 .grid-item {
     width: 16.6%;
+    padding: 10px 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -42,11 +55,11 @@ grid
 }
 .square {
     display: block;
-    background-color: aquamarine;
+    background-color: #ac389a;
     width: 100%;
     min-height: 50px;
     border-radius: 5px;
-    box-shadow: 3px 3px 0 #bbb;
+    box-shadow: 3px 3px 0 #4c4b4b;
     transition: box-shadow .25s;
 }
 .square:hover {
