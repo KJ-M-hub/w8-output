@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="./sanitize.css">
     <link rel="stylesheet" href="./style.css">
-
+    <!-- script -->
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="section section1">
@@ -126,7 +127,12 @@
                         </label>
                     </th>
                     <td>
-                        <input class="input" type="password" id="password">
+                        <div class="password-container">
+                            <input class="input" type="password" id="password">
+                            <span class="toggle-password" id="toggle-password">
+                                <span class="eye-icon">👁️</span>
+                            </span>
+                        </div>
                     </td>
                 </tr>
             </table>
