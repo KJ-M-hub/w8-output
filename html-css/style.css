@@ -21,6 +21,7 @@ grid
     flex-wrap: wrap;
 }
 .grid-item {
+    position: relative;
     width: 25%;
     padding: 5px;
     
@@ -53,6 +54,10 @@ grid
         width: 100%;
     }
 }
+
+/* 
+square
+*/
 .square {
     display: block;
     background-color: #ac389a;
@@ -67,6 +72,18 @@ grid
     opacity: 0.6;
 }
 
+/* 
+number
+*/
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color:#bbb;
+    text-shadow: 2px 2px 0 #4c4b4b;
+}
 
 
 
@@ -151,10 +168,12 @@ password
 
 .toggle-password {
     position: absolute;
-    right: 10px;
+    right: -10px;
     cursor: pointer;
 }
 
 .eye-icon {
-    font-size: 1.2em;
+    width: 70%;
+    height: 70%;
+    padding: 3px;
 }
